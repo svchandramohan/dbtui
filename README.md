@@ -1,4 +1,37 @@
-Welcome to your new dbt project!
+# Welcome to your new dbt project!
+
+## Pull Request Viewer
+
+This repository includes a pull request viewer utility that allows you to see all pull requests for this repository.
+
+### Usage
+
+To view pull requests, run:
+
+```bash
+python3 pull_request_viewer.py
+```
+
+This will display:
+- Current working branch information
+- All pull requests (open, closed, and merged)
+- Summary statistics
+- Direct links to GitHub
+
+### Requirements
+
+Install the required dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+For live GitHub API access (higher rate limits), set the `GITHUB_TOKEN` environment variable:
+
+```bash
+export GITHUB_TOKEN=your_github_token_here
+python3 pull_request_viewer.py
+```
 
 ### Using the starter project
 

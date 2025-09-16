@@ -1,0 +1,14 @@
+#!/bin/bash
+# Simple wrapper script to show pull requests
+
+echo "🔍 Showing pull requests for dbtui repository..."
+echo ""
+
+# Check if Python is available
+if ! command -v python3 &> /dev/null; then
+    echo "❌ Error: Python 3 is required but not installed."
+    exit 1
+fi
+
+# Run the pull request viewer
+python3 "$(dirname "$0")/pull_request_viewer.py"
